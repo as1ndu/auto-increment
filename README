@@ -1,0 +1,14 @@
+# Steps to reproduce
+
+AUTOINCREMENT issue in cloudflare workers.
+
+- Create D1 DB (add db ID & binding)
+`sudo npx wrangler@latest d1 create auto-increment-d1-db`
+
+- Create table with auto increment & insert record
+`sudo bash ./run-query.sh`
+
+- Get error
+  `✘ [ERROR] table UserAccounts has 2 columns but 1 values were supplied: SQLITE_ERROR`
+
+Same error persists when acessing D1 via `env.DB`  in `JavaScript` workers api

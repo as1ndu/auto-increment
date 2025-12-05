@@ -1,0 +1,1 @@
+sudo npx wrangler d1 execute auto-increment-d1-db  --local --file=./schema.sql
