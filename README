@@ -11,4 +11,6 @@ AUTOINCREMENT issue in cloudflare workers.
 - Get error
   `✘ [ERROR] table UserAccounts has 2 columns but 1 values were supplied: SQLITE_ERROR`
 
+  I expected only 1 value to be sumbitted and the other value would be created with auto increment.
+
 Same error persists when acessing D1 via `env.DB`  in `JavaScript` workers api
